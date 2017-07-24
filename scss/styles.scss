@@ -11,7 +11,8 @@ body {
   margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
-  font-family: 'Open Sans', sans-serif;
+  // font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .flex-container {
@@ -22,8 +23,8 @@ body {
   width: 1600px;
   height: 100%;
 }
-
 // navigation styles
+
 nav {
   width: 1600px;
   height: 800px;
@@ -36,53 +37,90 @@ nav {
   overflow: hidden;
   z-index: 0;
 
-.menu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  width: 700px;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-
-  li,
-  ul {
-    list-style: none;
+  .menu {
     display: flex;
-    flex: 1;
-    height: 100px;
-    margin-top: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-  }
+    width: 700px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 
-  li {
-    display: inline-block;
-    font-size: 1em;
-    color: black;
-    font-weight: bold;
-    line-height: 1.125;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-  }
+    li,
+    ul {
+      list-style: none;
+      display: flex;
+      flex: 1;
+      height: 100px;
+      margin-top: 15px;
+      justify-content: center;
+      align-items: stretch;
+    }
 
-  #logo {
-    margin-left: 50px;
-    margin-right: 50px;
-    // margin-top: 20px;
+    li {
+      display: inline-block;
+      font-size: 1em;
+      color: black;
+      font-weight: bold;
+      line-height: 1.125;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    #logo {
+      margin-left: 50px;
+      margin-right: 50px;
+      // margin-top: 20px;
+    }
   }
-}
 }
 //section styles
 
 section {
-background-color: #f7f7f7;
-height: 252px;
+  background-color: #f7f7f7;
 
+  .art-one {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    div {
+      margin-bottom: 25px;
+    }
+
+    div:nth-of-type(2) {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+
+    div:last-of-type {
+      font-size: 1.2em;
+      text-align: center;
+      color: #333333;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
+
+
+  .art-two {
+    height: 600px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+  }
 }
-
 //footer styles
