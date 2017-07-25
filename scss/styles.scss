@@ -266,8 +266,6 @@ section {
     margin: auto;
     line-height: 1.5;
 
-
-
     div:first-of-type {
       flex: 0 0 30%;
       order: 1;
@@ -319,7 +317,6 @@ section {
       justify-content: flex-end;
       // align-items: center;
       overflow: hidden;
-
     }
 
     div:last-of-type {
@@ -339,6 +336,138 @@ section {
     margin: auto;
     // top: 0;
     // left: 0;
+    max-width: 100%;
+  }
+
+  .art-shop {
+    height: 500px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+    max-width: 100%;
+
+    .left-shop {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow: hidden;
+      order: 1;
+
+      img:first-of-type {
+        flex-shrink: 0;
+        min-width: auto;
+        min-height: 100%;
+        flex: 0 0 24%;
+        order: 1;
+      }
+
+      img:nth-of-type(2) {
+        flex-shrink: 0;
+        min-width: auto;
+        min-height: 100%;
+        flex: 1 0 24%;
+        order: 2;
+      }
+
+      img:last-of-type {
+        min-width: auto;
+        min-height: 100%;
+        flex: 1 0 50%;
+        order: 3;
+      }
+    }
+
+    .center-shop {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      // align-items: center;
+      overflow: hidden;
+      order: 2;
+      flex: 0 0 33%;
+
+      img {
+        flex-shrink: 0;
+        min-width: auto;
+        min-height: 100%;
+      }
+    }
+
+    .right-shop {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow: hidden;
+      order: 3;
+
+      img:first-of-type {
+        min-width: auto;
+        min-height: 100%;
+        flex: 0 0 50%;
+        order: 1;
+      }
+
+      img:nth-of-type(2) {
+        flex-shrink: 0;
+        min-width: auto;
+        min-height: 100%;
+        flex: 0 0 24%;
+        order: 2;
+      }
+
+      img:last-of-type {
+        flex-shrink: 0;
+        min-width: auto;
+        min-height: 100%;
+        flex: 0 0 24%;
+        order: 2;
+      }
+    }
+  }
+
+  .art-black {
+    height: 250px;
+    width: 100%;
+    background-color: #282f35;
+    color: #979797;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    div {
+      width: 300px;
+      height: 60px;
+      border: 1px solid #979797;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  .art-white {
+    height: 500px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
     max-width: 100%;
   }
 }
