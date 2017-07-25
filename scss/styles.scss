@@ -455,14 +455,39 @@ section {
     height: 400px;
     width: 100%;
     background-color: #f7f7f7;
-    // display: flex;
-    // flex-wrap: wrap;
-    // flex-direction: column;
-    // align-items: center;
-    margin: auto;
-    // top: 0;
-    // left: 0;
-    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+
+    .slide {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img,
+      p {
+        margin-bottom: 40px;
+      }
+
+      p:first-of-type {
+        color: #979797;
+      }
+
+      span {
+        font-weight: bold;
+        color: #000000;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 25px;
+        color: #979797;
+      }
+    }
   }
 
   .art-shop {
@@ -731,17 +756,17 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 
   .flex-container {
     width: 60%;
@@ -749,17 +774,17 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 
     div {
       width: calc(100%/3);
@@ -769,8 +794,8 @@ footer {
       font-size: 16px;
       color: #979797;
       -webkit-box-ordinal-group: 2;
-          -ms-flex-order: 1;
-              order: 1;
+      -ms-flex-order: 1;
+      order: 1;
 
       p:first-of-type {
         font-weight: bold;
@@ -779,23 +804,23 @@ footer {
 
     .social {
       -webkit-box-ordinal-group: 3;
-          -ms-flex-order: 2;
-              order: 2;
+      -ms-flex-order: 2;
+      order: 2;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
+      flex-wrap: nowrap;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
 
       p {
         margin-right: 15px;
@@ -807,20 +832,20 @@ footer {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
+      flex-wrap: nowrap;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       -webkit-box-ordinal-group: 4;
-          -ms-flex-order: 3;
-              order: 3;
+      -ms-flex-order: 3;
+      order: 3;
     }
 
     p {
@@ -855,5 +880,4 @@ footer {
       margin-bottom: 10px;
     }
   }
-}
 }
