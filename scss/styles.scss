@@ -109,6 +109,14 @@ nav {
       margin-right: 50px;
       // margin-top: 20px;
     }
+    a{
+      text-decoration: none;
+      color: #000000;
+    }
+    a:hover {
+      text-decoration: none;
+      color: #64c29e;
+    }
   }
 }
 //section styles
@@ -717,6 +725,15 @@ section {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+
+      a{
+        text-decoration: none;
+        color: #979797;
+      }
+      a:hover {
+        text-decoration: none;
+        color: #64c29e;
+      }
     }
   }
 
