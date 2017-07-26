@@ -462,7 +462,7 @@ section {
     }
   }
 
-  .art-fader {
+  .art-slider {
     height: 400px;
     width: 100%;
     background-color: #f7f7f7;
@@ -518,6 +518,10 @@ section {
         font-size: 25px;
         color: #979797;
       }
+      ul, li {
+        list-style: none;
+
+      }
     }
   }
 
@@ -543,6 +547,7 @@ section {
     overflow: hidden;
     margin: auto;
     max-width: 100%;
+
 
     .left-shop {
       display: -webkit-box;
